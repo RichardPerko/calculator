@@ -1,33 +1,33 @@
 const output = document.querySelector('.output');
 
 function addition(a, b){
-
+  return a + b;
 }
 
 function subtraction(a, b){
-
+  return a - b;
 }
 
 function mutliplication(a, b){
-
+  return a * b;
 }
 
 function division(a, b){
-
+  return a / b;
 }
 
-function operators(a, b, operator){
+function operate(a, b, operator){
     switch (operator){
-      case 1: "+"
+      case "+" :
         addition(a, b);
         break;
-      case 2: "-"
+      case "-" :
         subtraction(a, b);
         break;
-      case 3: "*"
+      case "*" : 
         mutliplication(a, b);
         break;
-      case 4: "/"
+      case "/" :
         division(a, b);
         break;
     }

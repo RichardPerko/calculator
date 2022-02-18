@@ -1,4 +1,13 @@
-const output = document.querySelector('.output');
+// get values from buttons
+function getValue(value){
+
+  // set the current input 
+  (currentNum === 0) ? (currentNum = value) : (currentNum = ("" + currentNum + value))
+
+  // display values to html
+  document.getElementById('output').innerHTML = currentNum;
+  
+}
 
 function addition(a, b){
   return a + b;

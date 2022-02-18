@@ -1,3 +1,5 @@
+
+let currentNum = 0;
 // get values from buttons
 function getValue(value){
 

@@ -10,11 +10,11 @@
 </head>
 <body>
     <div id="output"></div>
-    <button id="addBtn">+</button>
-    <button id="subBtn">-</button>
-    <button id="mulBtn">*</button>
-    <button id="divBtn">/</button>
-    <button id="eqlBtn">=</button>
+    <input type="button" onclick="getOperator(this.value)" class="operationBtn" value="+">
+    <input type="button" onclick="getOperator(this.value)" class="operationBtn" value="-">
+    <input type="button" onclick="getOperator(this.value)" class="operationBtn" value="*">
+    <input type="button" onclick="getOperator(this.value)" class="operationBtn" value="/">
+    <input type="button" onclick="getEqls()" class="operationBtn" value="=">
     <div id="keypad">
         <input type="button" onclick="getValue(this.value)" class="numBtn" value="1">
         <input type="button" onclick="getValue(this.value)" class="numBtn" value="2">

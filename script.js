@@ -14,19 +14,23 @@ function getValue(value){
 }
 
 function getOperator(sign){
-  // console.log("current",currentNum)
-  // console.log("total",totalNum)
-  // if(typeof previousSign === 'undefined'){
-  //   previousSign = sign
-  // } 
+  console.log("total",totalNum)
+  console.log("current", currentNum)
+  console.log(sign)
   if (totalNum === 0){
     totalNum = currentNum;
     currentNum = 0;
   } else {
-    totalNum = operate(totalNum, currentNum, previousSign)
+    currentNum = operate(totalNum, currentNum, previousSign)
+    totalNum = 0;
     console.log(totalNum, "total")
   }
-  previousSign = sign;
+
+  if (sign === "="){
+    console.log("working?")
+  } else {
+    previousSign = sign;
+  }
 }
 
 function display(output){
@@ -39,36 +43,31 @@ function clearScreen(){
   totalNum = 0;
 }
 
-function getEqls(){
-  totalNum = operate(totalNum, currentNum, previousSign);
-  console.log(totalNum)
-}
-
 function addition(a, b){
   totalNum = parseInt(a) + parseInt(b);
   display(totalNum);
-  currentNum = 0;
+  // currentNum = 0;
   return(totalNum);
 }
 
 function subtraction(a, b){
   totalNum = parseInt(a) - parseInt(b);
   display(totalNum);
-  currentNum = 0;
+  // currentNum = 0;
   return(totalNum);
 }
 
 function mutliplication(a, b){
   totalNum = parseInt(a) * parseInt(b);
   display(totalNum);
-  currentNum = 0;
+  // currentNum = 0;
   return(totalNum);
 }
 
 function division(a, b){
   totalNum = parseInt(a) / parseInt(b);
   display(totalNum);
-  currentNum = 0;
+  // currentNum = 0;
   return(totalNum);
 }
 

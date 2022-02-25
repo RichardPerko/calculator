@@ -89,10 +89,10 @@ posNegButton.addEventListener('click', () => {
 // if there is a display value divide by 100, if number is stored in currentNumber divide by 100
 percentageButton.addEventListener('click', () => {
   if(displayValue){
-    displayValue = number(displayValue) / 100;
+    displayValue = Number(displayValue) / 100;
     display.innerText = displayValue;
   } else{
-    currentNumber = number(currentNumber) / 100;
+    currentNumber = Number(currentNumber) / 100;
     display.innerText = currentNumber;
   }
 })

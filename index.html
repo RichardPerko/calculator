@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,24 @@
     <script src="script.js" defer></script>
     <title>Calculator</title>
 </head>
+
 <body>
+    <div class="header">
+        <h1 class="left">Calculator<h6>Richard Perko 2022</h6>
+        </h1>
+        <ul class="right">
+            <li><a href="https://twitter.com/CarlPerko" target="_blank"><input type="image"
+                        src="img/2021 Twitter logo - blue.png" height="32px" alt="twitter logo"></a></li>
+            <li><a href="https://github.com/RichardPerko/calculator" target="_blank"><input type="image"
+                        src="img/GitHub-Mark-64px.png" height="32px" alt="github logo"></a></li>
+            <li><a href="https://www.theodinproject.com/" target="_blank"><input type="image" src="img/OdinProject.svg"
+                        height="32px"></a></li>
+        </ul>
+    </div>
     <div id="container">
-        <div id="output"></div>
+        <div id="output">&nbsp</div>
         <div id="keypad">
-            <button id="clear">C</button>
+            <button id="clear">AC</button>
             <button id="posNeg">+/-</button>
             <button id="percentage">%</button>
             <button class="operator" id="divide">÷</button>
@@ -20,7 +34,7 @@
             <button class="number">7</button>
             <button class="number">8</button>
             <button class="number">9</button>
-            <button class="operator" id="multiply">*</button>
+            <button class="operator" id="multiply">x</button>
             <br />
             <button class="number">4</button>
             <button class="number">5</button>
@@ -38,4 +52,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,122 @@
+*{
+    background:black;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+input,
+a{
+    background-color: #a5a5a5;
+}
+
+.header{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    background-color: #a5a5a5;
+    height: 100px;
+}
+
+h1{
+    background-color: #a5a5a5;
+    display: flex;
+    margin-left: 20px;
+}
+
+h6{
+    background-color: #a5a5a5;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.right{
+    margin-right: 100px;
+    background-color: #a5a5a5;
+    flex-grow: 1;
+    justify-content: end;
+    gap: 40px;
+}
+
+p{
+    background-color: #a5a5a5;
+}
+#footer{
+    display: flex;
+    background:#a5a5a5;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+#container{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:100vh - 60px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 0;
+}
+
+#output{
+    flex-direction: row;
+    color: #ffffff;
+    width: 471.667px;
+    font-size: 80px;
+    text-align: end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#decimal,
+.number{
+    color: #ffffff;
+    background-color: #333333;
+}
+
+#equals,
+.operator{
+    color: #ffffff;
+    background-color: #ff9f0c;
+}
+#zero{
+    width: 220px;
+    text-align: start;
+    text-indent: 37px;
+}
+
+#clear,
+#posNeg,
+#percentage{
+    font-size: larger;
+    background-color: #a5a5a5;
+}
+
+span.ripple{
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+@keyframes ripple{
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
